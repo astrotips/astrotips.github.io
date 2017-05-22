@@ -1,0 +1,27 @@
+---
+---
+
+$primaryColor: #FF5C5B;
+$secondaryColor: rgb(253, 222, 50);
+
+.relatedArticlesRow{
+	$imageHeight : 25vh;
+	margin-top: 5vh;
+	cursor: pointer;
+	
+	img{
+		width: 100%;
+		height: $imageHeight;
+	}
+	h1,h2,h3,h4,h5,h6{
+		line-height: 24px;
+	}
+	a{
+		&:hover{
+			text-decoration:none;
+		}
+	}
+	.articleDescription{
+		
+	}
+}

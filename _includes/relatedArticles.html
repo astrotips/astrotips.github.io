@@ -1,0 +1,64 @@
+<script type="text/javascript">
+
+    function generateRandomPosts()
+    {
+        $.getJSON("/assets/allPosts.json", function(data) {
+            console.log("[search.json loaded for random posts]");
+
+            var postsCount = data.length;
+            var posts = data;
+
+            var randomIndexUsed = [];
+            var counter = 0;
+            var numberOfPosts = 3;
+
+            var divRandomPosts = $(".relatedArticles");
+
+            divRandomPosts.append(
+                '<div class="row">'+
+                '<h3 class="pb-2 ur">other posts</h3>'+
+                '<div>'
+                );
+
+            while (counter < numberOfPosts)
+            {
+                var randomIndex = Math.floor(Math.random() * postsCount);
+
+                if (randomIndexUsed.indexOf(randomIndex) == "-1")
+                {
+                    var postHREF = posts[randomIndex].href;
+                    var postTitle = posts[randomIndex].title;
+                    var postImage = posts[randomIndex].image;
+                    var postDate = posts[randomIndex].date;
+
+
+                    divRandomPosts.append(
+                        '<div class="row relatedArticlesRow">'+
+                        '<img class="img-fluid" src="'+postImage+'" alt="'+postTitle+'">'+
+                        '<div class="articleDescription pt-2 px-1"><h5><small><a href="'+postHREF+'">'+postTitle+'</a></small></h5></div>'+
+                        '</div>'
+                        );
+
+                    randomIndexUsed.push(randomIndex);
+
+                    counter++;
+                }
+            }
+            console.log("Working");
+            $('.relatedArticlesRow').click(function () {
+                console.log("clicked");
+                window.location=$(this).find("a").attr("href");
+                return false;
+            })  
+        });
+    }
+
+    $(document).ready(function() {
+        generateRandomPosts();
+    });
+
+</script>
+
+<div class="container-fluid relatedArticles">
+
+</div>

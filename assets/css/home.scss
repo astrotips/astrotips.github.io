@@ -1,0 +1,64 @@
+---
+---
+
+$primaryColor: #FF5C5B;
+$secondaryColor: rgb(253, 222, 50);
+
+body{
+	color: rgb(0,0,0);
+	font-family:Montserrat,sans-serif;
+	line-height: 24px;
+}
+
+h1,h2,h3{
+	font-family:Montserrat,sans-serif;
+	color: $primaryColor;
+	line-height: 30px;
+	font-weight: 700;
+}
+
+.uy{
+	border-bottom-color: rgb(253, 222, 50);
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+}
+
+.ur{
+	border-bottom-color: $primaryColor;
+	border-bottom-style: solid;
+	border-bottom-width: 4px;
+}
+
+#topStory{
+	margin-bottom: 10px;
+	max-width: 95%;
+
+	img{
+		width:100%; 
+		height:45vh;
+	}
+}
+
+.homePosts{
+	$imageHeight : 25vh;
+	margin-top: 5vh;
+	cursor: pointer;
+
+	.imageDiv{
+		margin-left: -15px;
+	}
+	img{
+		width: 100%;
+		height: $imageHeight;
+	}
+	h1,h2,h3,h4,h5,h6{
+		line-height: 24px;
+	}
+	a{
+		color: rgb(0,0,0);
+		&:hover{
+			color: $primaryColor;
+			text-decoration:none;
+		}
+	}
+}
