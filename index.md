@@ -5,8 +5,10 @@ layout: default
 <div class="container-fluid">
 	<div class="row">
 
+		<!-- LEFT SIDE -->
 		<div class="col-sm-7 offset-sm-1">
 			
+			<!-- Top Post -->
 			<div id="topStory">
 				<h3 class="mb-4 pb-2 uy">Top Story</h3>
 				<div class="card">
@@ -21,23 +23,13 @@ layout: default
 				</div>
 			</div>
 
+			<!-- Latest Posts -->
 			<h3 class="mt-5 pb-2 uy">Latest Stories</h3>
-			<div class="container-fluid">
-				{% for post in site.posts%}
-				<div class="row homePosts">
-					<div class="col-sm-6 imageDiv">
-						<img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}">
-					</div>
-
-					<div class="col-sm-6">
-						<h5><small><a href="{{ post.permalink }}">{{ post.title }}</a></small></h5>
-						<p><small>{{ post.date | date: "%-d %B %Y at %R"}}</small></p>
-					</div>
-				</div>
-				{% endfor %}
-			</div>
+			{% include latestPosts.html %}
+			
 		</div>
-
+		
+		<!-- RIGHT SIDE -->
 		<div class="col-sm-3">
 			{%include relatedArticles.html %}
 		</div>

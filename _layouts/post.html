@@ -2,9 +2,37 @@
 layout: default
 ---
 
-<div>
-	<p>Post</p>
-	{{ content }}
+<div class="container-fluid">
+	<div class="row">
 
-	{%include relatedArticles.html %}
+		<!-- LEFT SIDE -->
+		<div class="col-sm-7 offset-sm-1">
+			
+			<!-- POST CONTENT -->
+			<a name="post"></a>
+			<div class="postOuterBlock">
+				<h1>{{ page.title }}</h1>
+				<div class="postBlock">
+					<img class="img-fluid my-5 mx-auto d-block" alt="{{ page.title }}" src="{{ page.image }}">
+					<div class="postContent px-3">
+						{{ content }}	
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- TODO: Facebook Comment Section -->
+
+			<!-- Latest Posts -->
+			<h3 class="mt-5 pb-2 uy">Latest Stories</h3>
+			{% include latestPosts.html %}
+			
+		</div>
+		
+		<!-- RIGHT SIDE -->
+		<div class="col-sm-3">
+			{%include relatedArticles.html %}
+		</div>
+	</div>
+
 </div>

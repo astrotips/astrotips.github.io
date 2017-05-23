@@ -7,8 +7,4 @@ categories: jekyll update
 image: /assets/images/3.jpg
 ---
 
-<h1>Top 10 Things to do this summer</h1>
-
-<p>
-<blockquote>Hey there</blockquote>
-</p>
+Top 10 Things to do this summer

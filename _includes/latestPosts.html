@@ -1,0 +1,14 @@
+<div class="container-fluid">
+	{% for post in site.posts%}
+	<div class="row homePosts">
+		<div class="col-sm-6 imageDiv">
+			<img class="img-fluid" src="{{ post.image }}" alt="{{ post.title }}">
+		</div>
+
+		<div class="col-sm-6">
+			<h5><small><a href="{{ post.permalink }}/#post">{{ post.title }}</a></small></h5>
+			<p><small>{{ post.date | date: "%-d %B %Y at %R"}}</small></p>
+		</div>
+	</div>
+	{% endfor %}
+</div>

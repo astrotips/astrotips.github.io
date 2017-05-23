@@ -1,0 +1,45 @@
+---
+---
+
+$primaryColor: #FF5C5B;
+$primaryDarkColor: #c62331;
+$secondaryColor: rgb(253, 222, 50);
+$textColor: rgb(58, 58, 58);
+$textHeadingColor: rgb(65, 65, 65);
+
+h1{
+	font-family:Montserrat,sans-serif;
+	color: $primaryDarkColor;
+	line-height: 40px;
+	font-weight: bold;
+}
+
+.postOuterBlock{
+}
+
+.postBlock{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+	$imageHeight : 45vh;
+	width: 96%;
+	img{
+		width: 100%;
+		height: $imageHeight;
+	}
+	.postContent{
+		h1,h2,h3,h4,h5,h6{
+			color: $primaryDarkColor;
+			font-weight: 400;
+		}
+		p{
+			font-family: lRegular, sans-serif;
+			font-size: 18px;
+			line-height: 30px;
+			color: $textColor;
+		}
+		span{
+			color: $primaryColor;
+		}
+	}
+}

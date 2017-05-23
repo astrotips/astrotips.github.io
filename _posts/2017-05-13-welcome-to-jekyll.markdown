@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Things You Should Not Miss Knowing About Jekyll. Do Take a Look and Thank Me Later"
 date:   2017-05-13 16:10:49 +0530
 permalink: /welcome-to-Jekyll/
 categories: jekyll update
