@@ -8,7 +8,6 @@ $(document).ready(function() {
 	});
 
 	$('.homePosts').click(function () {
-		console.log("clicked");
 		window.location=$(this).find("a").attr("href");
 		return false;
 	});
@@ -16,8 +15,8 @@ $(document).ready(function() {
 	$('.postContent').find('p').addClass('text-justify px-1 py-1 mt-3 mb-4');
 
 	$('.shBt').click(function () {
-		console.log("clicked");
-		window.location=$(this).find("a").attr("href");
+		var href=$(this).find("a").attr("href");
+		window.open(href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
 		return false;
 	});
 

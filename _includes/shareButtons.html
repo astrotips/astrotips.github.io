@@ -5,23 +5,21 @@
 			<!--the Facebook base 
 			https://www.facebook.com/dialog/share? --> 
 
-			<a target="_blank" href="https://www.facebook.com/dialog/share
+			<a href="https://www.facebook.com/dialog/share
 			?app_id=1366221856799984&display=popup
 			&href={{ site.url }}{{ page.url }}
 			&redirect_uri={{ site.url }}{{ page.url }}">
-
 			<!-- use the facebook logo for the link --> 
 			<i class="fa fa-facebook" aria-hidden="true"></i>
 
-			</a>
-		</div>
+		</a>
+	</div>
 
-		<div class="col-md-1 col-2 twitterBt shBt">
+	<div class="col-md-1 col-2 twitterBt shBt">
 			<!--the Twitter base 
 			https://twitter.com/share --> 
 			<!-- TODO: Add twitter account. Also append "&via=createdtwitterhandler" to href below -->
-			<a target="_blank" href="https://twitter.com/share?text={{ page.title }}&url={{site.url}}{{ page.permalink }}">
-
+			<a href="https://twitter.com/share?text={{ page.title }}&url={{site.url}}{{ page.permalink }}">
 				<!-- use the twitter logo for the link --> 
 				<i class="fa fa-twitter" aria-hidden="true"></i>
 			</a>
@@ -33,19 +31,18 @@
 
 			<a href="https://plus.google.com/share?
 			url={{ site.url }}{{ page.url }}
-			&hl=en-US" 
-			onclick="javascript:window.open(this.href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;">
+			&hl=en-US">
 
 			<!-- use the google+ logo for the link --> 
 			<i class="fa fa-google-plus" aria-hidden="true"></i>
-			</a> 
-		</div>
+		</a> 
+	</div>
 
-		<div class="col-md-1 col-2 linkedinBt shBt">
+	<div class="col-md-1 col-2 linkedinBt shBt">
 			<!--the LinkedIn base url 
 			http://www.linkedin.com/shareArticle?mini=true --> 
 
-			<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{ page.url }}&title={{ page.title }}&source={{ site.title }}">
+			<a href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{ page.url }}&title={{ page.title }}">
 
 				<!-- use the linkedin logo for the link --> 
 				<i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -54,5 +51,5 @@
 			</a> 
 		</div>
 
-</div>
+	</div>
 </div>
