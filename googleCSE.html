@@ -1,0 +1,23 @@
+---
+layout: default
+permalink: /search/
+---
+<div class="container-fluid">
+	<div class="row">
+		<div class="googleCSE col-lg-8 offset-lg-2">
+			<script>
+				(function() {
+					var cx = '017874992178965213589:9uy4xp2lfog';
+					var gcse = document.createElement('script');
+					gcse.type = 'text/javascript';
+					gcse.async = true;
+					gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+			</script>
+			<gcse:searchresults-only queryParameterName="searchString"></gcse:searchresults-only>
+		</div>
+	</div>
+
+</div>

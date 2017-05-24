@@ -3,7 +3,9 @@
 
 $primaryColor: #FF5C5B;
 $secondaryColor: rgb(253, 222, 50);
+$primaryDarkColor: #c62331;
 $textColor: rgb(58, 58, 58);
+$textHeadingColor: rgb(65, 65, 65);
 
 body{
 	color: rgb(0,0,0);
@@ -64,6 +66,27 @@ h2,h3{
 	}
 	.postDate{
 		color: $textColor;
+	}
+}
+
+.newsLetter{
+	//background-color: #ff9800;
+	color: rgb(65, 65, 65);
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+	form{
+		input,button{
+			color: #FFF;
+
+			/* Removes border and rounded corners */
+		  	-webkit-border-radius: 0;
+		    -moz-border-radius: 0;
+		    border-radius: 0;
+		    border: 0;
+		}
+		button{
+			background-color: $primaryDarkColor;
+		}
 	}
 }
 

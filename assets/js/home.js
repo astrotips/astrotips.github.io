@@ -1,5 +1,12 @@
 $(document).ready(function() {
 
+	$('#searchString').keypress(function(event) {
+		if (event.keyCode == 13 || event.which == 13) {
+			event.preventDefault();
+			$('#searchForm').submit();
+		}
+	});
+
 	$('.homePosts').click(function () {
 		console.log("clicked");
 		window.location=$(this).find("a").attr("href");

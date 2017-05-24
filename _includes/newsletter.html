@@ -1,0 +1,11 @@
+<div class="newsLetter px-4 py-4">
+	<h5>Subscribe to our Newsletter<i class="fa fa-envelope ml-2" aria-hidden="true"></i>
+	</h5>
+	<form role="form" action="https://tinyletter.com/{{ site.tinyletter_username }}" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/{{ site.tinyletter_username }}', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+
+		<label class="sr-only" for="tlemail">Email address</label>
+		<input type="email" class="form-control px-3 py-3" name="email" id="tlemail" placeholder="Enter your Email ID" />
+		<button type="submit" class="btn btn-block"><small>Sign me up</small></button>
+		
+	</form>
+</div>
