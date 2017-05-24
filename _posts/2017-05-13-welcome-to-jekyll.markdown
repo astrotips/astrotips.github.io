@@ -5,6 +5,7 @@ date:   2017-05-13 16:10:49 +0530
 permalink: /welcome-to-Jekyll/
 categories: jekyll update
 image: /assets/images/1.jpg
+fbcomments: yes
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You `can` rebuild the site in many different ways, bu\ches a web server and auto-regenerates your site when a file is updated.
 

@@ -3,6 +3,7 @@
 
 $primaryColor: #FF5C5B;
 $secondaryColor: rgb(253, 222, 50);
+$textColor: rgb(58, 58, 58);
 
 body{
 	color: rgb(0,0,0);
@@ -61,4 +62,13 @@ h2,h3{
 			text-decoration:none;
 		}
 	}
+	.postDate{
+		color: $textColor;
+	}
 }
+
+@media(max-width:576px){
+
+}
+@media(max-width:768px){}
+@media(max-width:992px){}

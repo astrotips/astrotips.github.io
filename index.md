@@ -6,7 +6,7 @@ layout: default
 	<div class="row">
 
 		<!-- LEFT SIDE -->
-		<div class="col-sm-7 offset-sm-1">
+		<div class="col-lg-7 offset-lg-1 col-md-8">
 			
 			<!-- Top Post -->
 			<div id="topStory">
@@ -30,7 +30,7 @@ layout: default
 		</div>
 		
 		<!-- RIGHT SIDE -->
-		<div class="col-sm-3">
+		<div class="col-lg-3 col-md-4 col-sm-6 mt-5 mt-md-0">
 			{%include relatedArticles.html %}
 		</div>
 	</div>

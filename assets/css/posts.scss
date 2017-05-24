@@ -15,6 +15,12 @@ h1{
 }
 
 .postOuterBlock{
+	.fb-comments{
+		width: 100%;
+	}
+	.postDate{
+		color: $textColor;
+	}
 }
 
 .postBlock{
@@ -43,3 +49,45 @@ h1{
 		}
 	}
 }
+
+/* Share Buttons styles */
+
+.shareButtons{
+	.row{
+		text-align: center;
+		i{
+		color: #FFFFFF;
+		}
+		.fbBt{
+			background-color: #3b5998;
+		}
+		.twitterBt{
+			background-color: #0084b4;
+		}
+		.linkedinBt{
+			background-color: #0077B5;
+		}
+		.googleBt{
+			background-color: #d34836;
+		}
+		.shBt{
+			cursor: pointer;
+		}
+	}
+}
+
+@media(max-width:576px){
+	
+	h1{
+		font-size: 2rem;
+	}
+	.postBlock{
+		.postContent{
+			p{
+				font-size: 1rem;
+			}
+		}
+	}
+}
+@media(max-width:768px){}
+@media(max-width:992px){}
