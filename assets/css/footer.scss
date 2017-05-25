@@ -6,20 +6,48 @@ $secondaryColor: rgb(253, 222, 50);
 $primaryDarkColor: #c62331;
 $textColor: rgb(58, 58, 58);
 $textHeadingColor: rgb(65, 65, 65);
+$footerTextColor: rgb(188, 190, 192);
 
 footer{
+	$section-1-background: #333333;
+	$section-2-background: #2C2B2B;
 	
-	color: rgb(188, 190, 192);
+	color: $footerTextColor;
 	.fSection-1{
-	background-color: #333333;
+	background-color: $section-1-background;
 	}
 	.fSection-2{
-	background-color: #2C2B2B;
+	background-color: $section-2-background;
 	}
 	.newsLetter{
 		form{
 			input{
 				color: $textColor;
+			}
+		}
+	}
+
+	.blackWhiteLogo{
+		.followUsButtons{
+			.row{
+				i{
+				color: $footerTextColor;
+				}
+				.fbBt{
+					background-color:   $section-2-background;
+				}
+				.twitterBt{
+					background-color:   $section-2-background;
+				}
+				.linkedinBt{
+					background-color:   $section-2-background;
+				}
+				.googleBt{
+					background-color:   $section-2-background;
+				}
+				.shBt{
+					cursor: pointer;
+				}
 			}
 		}
 	}

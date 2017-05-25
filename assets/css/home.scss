@@ -93,6 +93,30 @@ h2,h3{
     transition: 0.3s;
 }
 
+.followUsButtons{
+	.row{
+		text-align: center;
+		i{
+		color: #FFFFFF;
+		}
+		.fbBt{
+			background-color: #3b5998;
+		}
+		.twitterBt{
+			background-color: #0084b4;
+		}
+		.linkedinBt{
+			background-color: #0077B5;
+		}
+		.googleBt{
+			background-color: #d34836;
+		}
+		.shBt{
+			cursor: pointer;
+		}
+	}
+}
+
 @media(max-width:576px){
 
 }

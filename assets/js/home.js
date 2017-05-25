@@ -14,14 +14,21 @@ $(document).ready(function() {
 
 	$('.postContent').find('p').addClass('text-justify px-1 py-1 mt-3 mb-4');
 
-	$('.shBt').click(function () {
+	$('.shareButtons').find('.shBt').click(function () {
 		var href=$(this).find("a").attr("href");
 		window.open(href,'', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
 		return false;
 	});
 
+	$('.followUsButtons').find('.shBt').click(function () {
+		var win = window.open($(this).find("a").attr("href"), '_blank');
+  		win.focus();
+		return false;
+	});
+
 	$('.expandedShBt').find('.shBt').addClass('px-5 py-2 mr-2');
 	$('.footerExpandedShBt').find('.shBt').addClass('pl-3 pr-4 py-2 mr-2 rounded-circle');
+	$('.blackWhiteLogo').find('.shBt').addClass('pr-4');
 	
 	// Inline Footer js
 	$('footer').find('.newsLetter').removeClass('px-4 py-4');
