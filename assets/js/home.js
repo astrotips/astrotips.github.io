@@ -21,4 +21,14 @@ $(document).ready(function() {
 	});
 
 	$('.expandedShBt').find('.shBt').addClass('px-5 py-2 mr-2');
+	$('.footerExpandedShBt').find('.shBt').addClass('pl-3 pr-4 py-2 mr-2 rounded-circle');
+	
+	// Inline Footer js
+	$('footer').find('.newsLetter').removeClass('px-4 py-4');
+	$('footer').find('input').removeClass('px-3 py-3');
+	$('footer').find('button').removeClass('btn-block');
+	$('footer').find('input').addClass('px-2 py-2 col-lg-8 col-sm-12 col-8');
+	$('footer').find('button').addClass('px-2 py-2 col-lg-4 col-sm-12 col-4 btn-primary');
+
+	$('footer').find('.newsLetter').find('form').addClass('form-inline');
 });

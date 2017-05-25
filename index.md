@@ -31,7 +31,7 @@ layout: default
 		
 		<!-- RIGHT SIDE -->
 		<div class="col-lg-3 col-md-4 col-sm-6 mt-5 mt-md-0">
-			<div class="mb-4">
+			<div class="cardNewsletter mb-4">
 				{% include newsletter.html %}
 			</div>
 			

@@ -1,0 +1,26 @@
+---
+---
+
+$primaryColor: #FF5C5B;
+$secondaryColor: rgb(253, 222, 50);
+$primaryDarkColor: #c62331;
+$textColor: rgb(58, 58, 58);
+$textHeadingColor: rgb(65, 65, 65);
+
+footer{
+	
+	color: rgb(188, 190, 192);
+	.fSection-1{
+	background-color: #333333;
+	}
+	.fSection-2{
+	background-color: #2C2B2B;
+	}
+	.newsLetter{
+		form{
+			input{
+				color: $textColor;
+			}
+		}
+	}
+}
