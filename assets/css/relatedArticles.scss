@@ -1,8 +1,7 @@
 ---
 ---
 
-$primaryColor: #FF5C5B;
-$secondaryColor: rgb(253, 222, 50);
+@import 'variables.scss';
 
 .relatedArticlesRow{
 	$imageHeight : 25vh;
@@ -23,5 +22,9 @@ $secondaryColor: rgb(253, 222, 50);
 	}
 	.articleDescription{
 		
+	}
+	.postDate{
+		color: $textColor;
+		font-size: 0.8rem;
 	}
 }

@@ -1,16 +1,16 @@
 ---
 ---
 
-$primaryColor: #FF5C5B;
-$secondaryColor: rgb(253, 222, 50);
-$primaryDarkColor: #c62331;
-$textColor: rgb(58, 58, 58);
-$textHeadingColor: rgb(65, 65, 65);
+@import 'variables.scss';
 
 body{
 	color: rgb(0,0,0);
+	background-color: #F1F1F1;
 	font-family:Montserrat,sans-serif;
 	line-height: 24px;
+}
+
+.mainContent{
 }
 
 h2,h3{
@@ -27,14 +27,13 @@ h2,h3{
 }
 
 .ur{
-	border-bottom-color: $primaryColor;
+	border-bottom-color: $underLineColor;
 	border-bottom-style: solid;
-	border-bottom-width: 4px;
+	border-bottom-width: 2px;
 }
 
 #topStory{
-	margin-bottom: 10px;
-	max-width: 95%;
+	max-width: 100%;
 
 	img{
 		width:100%; 
@@ -66,6 +65,7 @@ h2,h3{
 	}
 	.postDate{
 		color: $textColor;
+		font-size: 0.8rem;
 	}
 }
 
@@ -87,8 +87,15 @@ h2,h3{
 }
 
 .cardNewsletter{
-	//background-color: #ff9800;
-	color: rgb(65, 65, 65);
+	background-color: $primaryColorLight;
+	//background-color: #ff9800; // yellowish color
+	color: #FFFFFF;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.cardBox{
+	background-color: #FFFFFF;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }

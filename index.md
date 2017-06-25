@@ -9,8 +9,8 @@ layout: default
 		<div class="col-lg-7 offset-lg-1 col-md-8">
 			
 			<!-- Top Post -->
-			<div id="topStory">
-				<h3 class="mb-4 pb-2 uy">Top Story</h3>
+			<div id="topStory" class="cardBox px-2 py-3 mb-3">
+				<h3 class="ml-2 pb-2">Top Story</h3>
 				<div class="card">
 
 					<img src="/assets/images/2.jpg" alt="Photo of sunset">
@@ -24,8 +24,10 @@ layout: default
 			</div>
 
 			<!-- Latest Posts -->
-			<h3 class="mt-5 pb-2 uy">Latest Stories</h3>
-			{% include latestPosts.html %}
+			<div class="cardBox px-2 py-3">
+				<h3 class="ml-2">Latest Stories</h3>
+				{% include latestPosts.html %}
+			</div>
 			
 		</div>
 		
@@ -34,8 +36,9 @@ layout: default
 			<div class="cardNewsletter mb-4">
 				{% include newsletter.html %}
 			</div>
-			
-			{%include relatedArticles.html %}
+			<div class="cardBox px-2 py-3">
+				{%include relatedArticles.html %}
+			</div>
 		</div>
 	</div>
 

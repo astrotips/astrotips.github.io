@@ -16,7 +16,7 @@
 
             divRandomPosts.append(
                 '<div class="row">'+
-                '<h3 class="pb-2 ur">other posts</h3>'+
+                '<h3>other posts</h3>'+
                 '<div>'
                 );
 
@@ -34,8 +34,11 @@
 
                     divRandomPosts.append(
                         '<div class="row relatedArticlesRow">'+
-                        '<img class="img-fluid" src="'+postImage+'" alt="'+postTitle+'">'+
-                        '<div class="articleDescription pt-2 px-1"><h5><small><a href="'+postHREF+'#post">'+postTitle+'</a></small></h5></div>'+
+                            '<img class="img-fluid" src="'+postImage+'" alt="'+postTitle+'">'+
+                            '<div class="articleDescription px-1">'+
+                                '<small><b><a href="'+postHREF+'#post">'+postTitle+'</a></b></small>'+
+                                '<div class="postDate"><small>'+postDate.day+' ' + postDate.month + ' ' + postDate.year+'</small></div>'+
+                            '</div>'+
                         '</div>'
                         );
 

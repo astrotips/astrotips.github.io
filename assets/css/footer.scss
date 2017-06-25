@@ -1,12 +1,7 @@
 ---
 ---
 
-$primaryColor: #FF5C5B;
-$secondaryColor: rgb(253, 222, 50);
-$primaryDarkColor: #c62331;
-$textColor: rgb(58, 58, 58);
-$textHeadingColor: rgb(65, 65, 65);
-$footerTextColor: rgb(188, 190, 192);
+@import 'variables.scss';
 
 footer{
 	$section-1-background: #333333;

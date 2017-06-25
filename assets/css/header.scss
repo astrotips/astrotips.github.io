@@ -1,8 +1,7 @@
 ---
 ---
 
-$primaryColor: #FF5C5B;
-$secondaryColor: rgb(253, 222, 50);
+@import 'variables.scss';
 
 .header{
 	.navbar{
@@ -35,6 +34,9 @@ $secondaryColor: rgb(253, 222, 50);
 			border: 0;
 			-webkit-border-radius: 0;
 	   		-moz-border-radius: 0;
+		}
+		i{
+			color: #FFFFFF;
 		}
 	}
 
